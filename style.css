@@ -1,0 +1,430 @@
+/* ===== Base Reset & Typography ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* ===== Navigation ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 12px 0;
+}
+
+.nav-links li a {
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.88em;
+  font-weight: 500;
+  color: #555;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-links li a:hover {
+  background: #f5f5f5;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* ===== Main Layout ===== */
+.main-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 36px 20px;
+  display: flex;
+  gap: 45px;
+  align-items: flex-start;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  position: sticky;
+  top: 70px;
+  width: 240px;
+  flex-shrink: 0;
+}
+
+.profile-card {
+  text-align: center;
+}
+
+.profile-photo {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 14px;
+}
+
+.profile-name {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.profile-title {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 2px;
+}
+
+.profile-affiliation {
+  font-size: 0.85em;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.profile-location {
+  font-size: 0.82em;
+  color: #999;
+  margin-bottom: 14px;
+}
+
+.profile-location i {
+  margin-right: 3px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-links a {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f3f4f6;
+  color: #555;
+  font-size: 1em;
+  transition: background 0.2s, color 0.2s;
+}
+
+.social-links a:hover {
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ===== Content Area ===== */
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.section h1 {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #222;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 16px;
+}
+
+.section h1 .emoji {
+  margin-right: 6px;
+}
+
+/* ===== About Section ===== */
+#about-me p {
+  margin-bottom: 12px;
+  font-size: 0.93em;
+  color: #374151;
+}
+
+/* ===== News Section ===== */
+.news-list {
+  list-style: none;
+}
+
+.news-list li {
+  padding: 7px 0;
+  font-size: 0.9em;
+  border-bottom: none;
+}
+
+.news-date {
+  display: inline-block;
+  font-weight: 600;
+  color: #888;
+  min-width: 68px;
+  margin-right: 10px;
+}
+
+/* ===== Publications ===== */
+.pub-item {
+  display: flex;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pub-item:last-child {
+  border-bottom: none;
+}
+
+.pub-item:hover {
+  background: none;
+}
+
+.pub-image {
+  flex-shrink: 0;
+  width: 180px;
+  height: 110px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pub-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pub-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.pub-venue {
+  display: inline-block;
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 1px 8px;
+  border-radius: 3px;
+  font-size: 0.75em;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.pub-content h4 {
+  font-size: 0.93em;
+  margin-bottom: 4px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.pub-content h4 a {
+  color: #111;
+}
+
+.pub-content h4 a:hover {
+  color: #2563eb;
+}
+
+.pub-authors {
+  font-size: 0.82em;
+  color: #666;
+  margin-bottom: 3px;
+  line-height: 1.5;
+}
+
+.pub-role {
+  font-size: 0.8em;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.pub-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 8px;
+  background: #f3f4f6;
+  border-radius: 3px;
+  font-size: 0.78em;
+  font-weight: 500;
+  color: #374151;
+  transition: background 0.2s;
+}
+
+.pub-links a:hover {
+  background: #e5e7eb;
+  text-decoration: none;
+}
+
+.pub-links a i {
+  font-size: 0.85em;
+}
+
+.pub-tldr {
+  font-size: 0.8em;
+  color: #777;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* ===== Timeline (Education & Internships) ===== */
+.timeline-list {
+  list-style: none;
+}
+
+.timeline-list li {
+  margin-bottom: 12px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 8px 0;
+}
+
+.timeline-date {
+  flex-shrink: 0;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #888;
+  min-width: 120px;
+  padding-top: 1px;
+}
+
+.timeline-content {
+  font-size: 0.9em;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.timeline-detail {
+  font-size: 0.88em;
+  color: #777;
+}
+
+.timeline-logo {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* ===== Awards ===== */
+.awards-list {
+  list-style: none;
+}
+
+.awards-list li {
+  padding: 8px 0;
+  font-size: 0.88em;
+  color: #444;
+}
+
+.awards-list li i {
+  margin-right: 8px;
+  color: #f59e0b;
+}
+
+.awards-list li i.fa-file-alt {
+  color: #999;
+}
+
+/* ===== Footer ===== */
+.footer {
+  margin-top: 40px;
+  padding: 16px 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+  font-size: 0.8em;
+  color: #aaa;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+    padding: 20px 16px;
+    gap: 24px;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+  }
+
+  .pub-item {
+    flex-direction: column;
+  }
+
+  .pub-image {
+    width: 100%;
+    height: 160px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .timeline-date {
+    min-width: unset;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 3px;
+  }
+
+  .nav-links li a {
+    padding: 4px 7px;
+    font-size: 0.8em;
+  }
+
+  .profile-photo {
+    width: 130px;
+    height: 130px;
+  }
+}
